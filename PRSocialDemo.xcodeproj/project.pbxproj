@@ -1,811 +1,2504 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		19B6CDB8150B47D8A3FBC71A /* libPods-PRSocialDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDD4F2D380D409DB02D6740 /* libPods-PRSocialDemo.a */; };
-		933FCF1D196655C200F45D83 /* UIWindow+PRSocialTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933FCF1C196655C200F45D83 /* UIWindow+PRSocialTopViewController.m */; };
-		93461E0D192B6AA7007D7DA0 /* UIApplication+PRSocialTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 93461E0C192B6AA7007D7DA0 /* UIApplication+PRSocialTopWindow.m */; };
-		93461E13192B7FA1007D7DA0 /* NSString+PRSocialASCIILength.m in Sources */ = {isa = PBXBuildFile; fileRef = 93461E12192B7FA1007D7DA0 /* NSString+PRSocialASCIILength.m */; };
-		93461E16192B8039007D7DA0 /* PRSocialComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93461E15192B8039007D7DA0 /* PRSocialComposeViewController.m */; };
-		937074A5192AE68D009561E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937074A4192AE68D009561E1 /* Foundation.framework */; };
-		937074A7192AE68D009561E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937074A6192AE68D009561E1 /* CoreGraphics.framework */; };
-		937074A9192AE68D009561E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937074A8192AE68D009561E1 /* UIKit.framework */; };
-		937074AF192AE68D009561E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 937074AD192AE68D009561E1 /* InfoPlist.strings */; };
-		937074B1192AE68D009561E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 937074B0192AE68D009561E1 /* main.m */; };
-		937074B5192AE68D009561E1 /* PRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 937074B4192AE68D009561E1 /* PRAppDelegate.m */; };
-		937074B7192AE68D009561E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937074B6192AE68D009561E1 /* Images.xcassets */; };
-		937074BE192AE68D009561E1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937074BD192AE68D009561E1 /* XCTest.framework */; };
-		937074BF192AE68D009561E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937074A4192AE68D009561E1 /* Foundation.framework */; };
-		937074C0192AE68D009561E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937074A8192AE68D009561E1 /* UIKit.framework */; };
-		937074C8192AE68D009561E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 937074C6192AE68D009561E1 /* InfoPlist.strings */; };
-		937074CA192AE68D009561E1 /* PRSocialDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 937074C9192AE68D009561E1 /* PRSocialDemoTests.m */; };
-		937074DA192AE8BE009561E1 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 937074D7192AE8BE009561E1 /* libWeChatSDK.a */; };
-		937074E2192AEB22009561E1 /* PRRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 937074E1192AEB22009561E1 /* PRRootViewController.m */; };
-		937074E9192AEC14009561E1 /* PRSocialService.m in Sources */ = {isa = PBXBuildFile; fileRef = 937074E8192AEC14009561E1 /* PRSocialService.m */; };
-		937074F2192AF035009561E1 /* PRWeChatService.m in Sources */ = {isa = PBXBuildFile; fileRef = 937074F1192AF035009561E1 /* PRWeChatService.m */; };
-		937074FA192AF36E009561E1 /* PRSocialConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 937074F9192AF36E009561E1 /* PRSocialConfig.m */; };
-		93707509192B2F28009561E1 /* PRWeiboService.m in Sources */ = {isa = PBXBuildFile; fileRef = 93707508192B2F28009561E1 /* PRWeiboService.m */; };
-		9370750B192B2F45009561E1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9370750A192B2F45009561E1 /* Social.framework */; };
-		9370752B192B3DCE009561E1 /* NSNumber+PRSocialURLCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 93707528192B3DCE009561E1 /* NSNumber+PRSocialURLCoding.m */; };
-		9370752C192B3DCE009561E1 /* NSString+PRSocialURLCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 9370752A192B3DCE009561E1 /* NSString+PRSocialURLCoding.m */; };
-		93707537192B45F6009561E1 /* PRSocialAuthWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93707536192B45F6009561E1 /* PRSocialAuthWebViewController.m */; };
-		93707548192B49F2009561E1 /* PRSocialHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 93707547192B49F2009561E1 /* PRSocialHTTPRequest.m */; };
-		9370755B192B535F009561E1 /* PRSocialAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 93707558192B535F009561E1 /* PRSocialAuth.m */; };
-		9370755C192B535F009561E1 /* PRSocialOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 9370755A192B535F009561E1 /* PRSocialOAuth.m */; };
-		93707560192B53AC009561E1 /* PRWeiboOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 9370755F192B53AC009561E1 /* PRWeiboOAuth.m */; };
-		937CA08D199E035700732FD6 /* PRWeChatAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 937CA08C199E035700732FD6 /* PRWeChatAuth.m */; };
-		937CA090199E037E00732FD6 /* PRWeChatOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 937CA08F199E037E00732FD6 /* PRWeChatOAuth.m */; };
-		93B2D1D619A1EDCF00ED196D /* PRTencentAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B2D1D519A1EDCF00ED196D /* PRTencentAuth.m */; };
-		93B2D1D919A1EE6B00ED196D /* PRTencentOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B2D1D819A1EE6B00ED196D /* PRTencentOAuth.m */; };
-		93B2D1DD19A1F26300ED196D /* PRTencentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B2D1DC19A1F26300ED196D /* PRTencentService.m */; };
-		93B2D1DF19A1F61900ED196D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B2D1DE19A1F61900ED196D /* libsqlite3.dylib */; };
-		93B2D1E319A1F62D00ED196D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B2D1E219A1F62D00ED196D /* CoreTelephony.framework */; };
-		93B2D1E519A1F63E00ED196D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B2D1E419A1F63E00ED196D /* SystemConfiguration.framework */; };
-		93B2D1E919A1F65600ED196D /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B2D1E819A1F65600ED196D /* libstdc++.dylib */; };
-		93B2D1EB19A1F67400ED196D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B2D1EA19A1F67400ED196D /* libz.dylib */; };
-		93DC96F1195C0C3F004D796E /* PRSocialUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DC96F0195C0C3F004D796E /* PRSocialUserInfo.m */; };
-		93EAE9A5192C39E60043FE67 /* PRWeiboAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EAE9A4192C39E60043FE67 /* PRWeiboAuth.m */; };
-		93EAE9A8192C437D0043FE67 /* NSObject+PRSocialJSONKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EAE9A7192C437D0043FE67 /* NSObject+PRSocialJSONKeyPath.m */; };
-		93EAE9AB192C46240043FE67 /* PRSocialHTTPFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EAE9AA192C46240043FE67 /* PRSocialHTTPFormDataRequest.m */; };
-		93EE296F192C785B001DB007 /* PRSocialGlobalHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EE296E192C785B001DB007 /* PRSocialGlobalHUD.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		937074C1192AE68D009561E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 93707499192AE68D009561E1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 937074A0192AE68D009561E1;
-			remoteInfo = PRSocialDemo;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		933FCF1B196655C200F45D83 /* UIWindow+PRSocialTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIWindow+PRSocialTopViewController.h"; path = "Classes/Utils/Categories/UIWindow+PRSocialTopViewController.h"; sourceTree = SOURCE_ROOT; };
-		933FCF1C196655C200F45D83 /* UIWindow+PRSocialTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+PRSocialTopViewController.m"; path = "Classes/Utils/Categories/UIWindow+PRSocialTopViewController.m"; sourceTree = SOURCE_ROOT; };
-		93461E0B192B6AA7007D7DA0 /* UIApplication+PRSocialTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIApplication+PRSocialTopWindow.h"; path = "Classes/Utils/Categories/UIApplication+PRSocialTopWindow.h"; sourceTree = SOURCE_ROOT; };
-		93461E0C192B6AA7007D7DA0 /* UIApplication+PRSocialTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+PRSocialTopWindow.m"; path = "Classes/Utils/Categories/UIApplication+PRSocialTopWindow.m"; sourceTree = SOURCE_ROOT; };
-		93461E11192B7FA1007D7DA0 /* NSString+PRSocialASCIILength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+PRSocialASCIILength.h"; path = "Classes/Utils/Categories/NSString+PRSocialASCIILength.h"; sourceTree = SOURCE_ROOT; };
-		93461E12192B7FA1007D7DA0 /* NSString+PRSocialASCIILength.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+PRSocialASCIILength.m"; path = "Classes/Utils/Categories/NSString+PRSocialASCIILength.m"; sourceTree = SOURCE_ROOT; };
-		93461E14192B8039007D7DA0 /* PRSocialComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRSocialComposeViewController.h; path = Classes/Utils/UI/PRSocialComposeViewController.h; sourceTree = SOURCE_ROOT; };
-		93461E15192B8039007D7DA0 /* PRSocialComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRSocialComposeViewController.m; path = Classes/Utils/UI/PRSocialComposeViewController.m; sourceTree = SOURCE_ROOT; };
-		937074A1192AE68D009561E1 /* PRSocialDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRSocialDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		937074A4192AE68D009561E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		937074A6192AE68D009561E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		937074A8192AE68D009561E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		937074AC192AE68D009561E1 /* PRSocialDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PRSocialDemo-Info.plist"; sourceTree = "<group>"; };
-		937074AE192AE68D009561E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		937074B0192AE68D009561E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		937074B2192AE68D009561E1 /* PRSocialDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PRSocialDemo-Prefix.pch"; sourceTree = "<group>"; };
-		937074B3192AE68D009561E1 /* PRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRAppDelegate.h; sourceTree = "<group>"; };
-		937074B4192AE68D009561E1 /* PRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRAppDelegate.m; sourceTree = "<group>"; };
-		937074B6192AE68D009561E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		937074BC192AE68D009561E1 /* PRSocialDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRSocialDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		937074BD192AE68D009561E1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		937074C5192AE68D009561E1 /* PRSocialDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PRSocialDemoTests-Info.plist"; sourceTree = "<group>"; };
-		937074C7192AE68D009561E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		937074C9192AE68D009561E1 /* PRSocialDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRSocialDemoTests.m; sourceTree = "<group>"; };
-		937074D7192AE8BE009561E1 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		937074D8192AE8BE009561E1 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		937074D9192AE8BE009561E1 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
-		937074E0192AEB22009561E1 /* PRRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRRootViewController.h; sourceTree = "<group>"; };
-		937074E1192AEB22009561E1 /* PRRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRRootViewController.m; sourceTree = "<group>"; };
-		937074E7192AEC14009561E1 /* PRSocialService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRSocialService.h; path = Classes/PRSocialService.h; sourceTree = SOURCE_ROOT; };
-		937074E8192AEC14009561E1 /* PRSocialService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRSocialService.m; path = Classes/PRSocialService.m; sourceTree = SOURCE_ROOT; };
-		937074F0192AF035009561E1 /* PRWeChatService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRWeChatService.h; path = Classes/PRWeChatService.h; sourceTree = SOURCE_ROOT; };
-		937074F1192AF035009561E1 /* PRWeChatService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRWeChatService.m; path = Classes/PRWeChatService.m; sourceTree = SOURCE_ROOT; };
-		937074F8192AF36E009561E1 /* PRSocialConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRSocialConfig.h; path = Classes/PRSocialConfig.h; sourceTree = SOURCE_ROOT; };
-		937074F9192AF36E009561E1 /* PRSocialConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRSocialConfig.m; path = Classes/PRSocialConfig.m; sourceTree = SOURCE_ROOT; };
-		937074FE192B08EC009561E1 /* PRSocial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PRSocial.h; path = Classes/PRSocial.h; sourceTree = SOURCE_ROOT; };
-		93707505192B2D74009561E1 /* libPods-PRSocialDemo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-PRSocialDemo.a"; path = "Pods/build/Debug-iphoneos/libPods-PRSocialDemo.a"; sourceTree = "<group>"; };
-		93707507192B2F28009561E1 /* PRWeiboService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRWeiboService.h; path = Classes/PRWeiboService.h; sourceTree = SOURCE_ROOT; };
-		93707508192B2F28009561E1 /* PRWeiboService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRWeiboService.m; path = Classes/PRWeiboService.m; sourceTree = SOURCE_ROOT; };
-		9370750A192B2F45009561E1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		93707527192B3DCE009561E1 /* NSNumber+PRSocialURLCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+PRSocialURLCoding.h"; path = "Classes/Utils/Categories/NSNumber+PRSocialURLCoding.h"; sourceTree = SOURCE_ROOT; };
-		93707528192B3DCE009561E1 /* NSNumber+PRSocialURLCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+PRSocialURLCoding.m"; path = "Classes/Utils/Categories/NSNumber+PRSocialURLCoding.m"; sourceTree = SOURCE_ROOT; };
-		93707529192B3DCE009561E1 /* NSString+PRSocialURLCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+PRSocialURLCoding.h"; path = "Classes/Utils/Categories/NSString+PRSocialURLCoding.h"; sourceTree = SOURCE_ROOT; };
-		9370752A192B3DCE009561E1 /* NSString+PRSocialURLCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+PRSocialURLCoding.m"; path = "Classes/Utils/Categories/NSString+PRSocialURLCoding.m"; sourceTree = SOURCE_ROOT; };
-		93707535192B45F6009561E1 /* PRSocialAuthWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRSocialAuthWebViewController.h; path = Classes/Utils/UI/PRSocialAuthWebViewController.h; sourceTree = SOURCE_ROOT; };
-		93707536192B45F6009561E1 /* PRSocialAuthWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRSocialAuthWebViewController.m; path = Classes/Utils/UI/PRSocialAuthWebViewController.m; sourceTree = SOURCE_ROOT; };
-		93707546192B49F2009561E1 /* PRSocialHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRSocialHTTPRequest.h; path = Classes/Utils/Network/PRSocialHTTPRequest.h; sourceTree = SOURCE_ROOT; };
-		93707547192B49F2009561E1 /* PRSocialHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRSocialHTTPRequest.m; path = Classes/Utils/Network/PRSocialHTTPRequest.m; sourceTree = SOURCE_ROOT; };
-		93707557192B535F009561E1 /* PRSocialAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRSocialAuth.h; path = Classes/Auth/Base/PRSocialAuth.h; sourceTree = SOURCE_ROOT; };
-		93707558192B535F009561E1 /* PRSocialAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRSocialAuth.m; path = Classes/Auth/Base/PRSocialAuth.m; sourceTree = SOURCE_ROOT; };
-		93707559192B535F009561E1 /* PRSocialOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRSocialOAuth.h; path = Classes/Auth/Base/PRSocialOAuth.h; sourceTree = SOURCE_ROOT; };
-		9370755A192B535F009561E1 /* PRSocialOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRSocialOAuth.m; path = Classes/Auth/Base/PRSocialOAuth.m; sourceTree = SOURCE_ROOT; };
-		9370755E192B53AC009561E1 /* PRWeiboOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRWeiboOAuth.h; path = Classes/Auth/Weibo/PRWeiboOAuth.h; sourceTree = SOURCE_ROOT; };
-		9370755F192B53AC009561E1 /* PRWeiboOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRWeiboOAuth.m; path = Classes/Auth/Weibo/PRWeiboOAuth.m; sourceTree = SOURCE_ROOT; };
-		937CA08B199E035700732FD6 /* PRWeChatAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRWeChatAuth.h; path = Classes/Auth/WeChat/PRWeChatAuth.h; sourceTree = SOURCE_ROOT; };
-		937CA08C199E035700732FD6 /* PRWeChatAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRWeChatAuth.m; path = Classes/Auth/WeChat/PRWeChatAuth.m; sourceTree = SOURCE_ROOT; };
-		937CA08E199E037E00732FD6 /* PRWeChatOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRWeChatOAuth.h; path = Classes/Auth/WeChat/PRWeChatOAuth.h; sourceTree = SOURCE_ROOT; };
-		937CA08F199E037E00732FD6 /* PRWeChatOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRWeChatOAuth.m; path = Classes/Auth/WeChat/PRWeChatOAuth.m; sourceTree = SOURCE_ROOT; };
-		93B2D1D419A1EDCF00ED196D /* PRTencentAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTencentAuth.h; path = Classes/Auth/Tencent/PRTencentAuth.h; sourceTree = SOURCE_ROOT; };
-		93B2D1D519A1EDCF00ED196D /* PRTencentAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTencentAuth.m; path = Classes/Auth/Tencent/PRTencentAuth.m; sourceTree = SOURCE_ROOT; };
-		93B2D1D719A1EE6B00ED196D /* PRTencentOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTencentOAuth.h; path = Classes/Auth/Tencent/PRTencentOAuth.h; sourceTree = SOURCE_ROOT; };
-		93B2D1D819A1EE6B00ED196D /* PRTencentOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTencentOAuth.m; path = Classes/Auth/Tencent/PRTencentOAuth.m; sourceTree = SOURCE_ROOT; };
-		93B2D1DB19A1F26300ED196D /* PRTencentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTencentService.h; path = Classes/PRTencentService.h; sourceTree = SOURCE_ROOT; };
-		93B2D1DC19A1F26300ED196D /* PRTencentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTencentService.m; path = Classes/PRTencentService.m; sourceTree = SOURCE_ROOT; };
-		93B2D1DE19A1F61900ED196D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		93B2D1E019A1F62200ED196D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		93B2D1E219A1F62D00ED196D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		93B2D1E419A1F63E00ED196D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		93B2D1E619A1F64A00ED196D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		93B2D1E819A1F65600ED196D /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		93B2D1EA19A1F67400ED196D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		93DC96EF195C0C3F004D796E /* PRSocialUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRSocialUserInfo.h; path = Classes/Model/PRSocialUserInfo.h; sourceTree = SOURCE_ROOT; };
-		93DC96F0195C0C3F004D796E /* PRSocialUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRSocialUserInfo.m; path = Classes/Model/PRSocialUserInfo.m; sourceTree = SOURCE_ROOT; };
-		93EAE9A3192C39E60043FE67 /* PRWeiboAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRWeiboAuth.h; path = Classes/Auth/Weibo/PRWeiboAuth.h; sourceTree = SOURCE_ROOT; };
-		93EAE9A4192C39E60043FE67 /* PRWeiboAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRWeiboAuth.m; path = Classes/Auth/Weibo/PRWeiboAuth.m; sourceTree = SOURCE_ROOT; };
-		93EAE9A6192C437D0043FE67 /* NSObject+PRSocialJSONKeyPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+PRSocialJSONKeyPath.h"; path = "Classes/Utils/Categories/NSObject+PRSocialJSONKeyPath.h"; sourceTree = SOURCE_ROOT; };
-		93EAE9A7192C437D0043FE67 /* NSObject+PRSocialJSONKeyPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+PRSocialJSONKeyPath.m"; path = "Classes/Utils/Categories/NSObject+PRSocialJSONKeyPath.m"; sourceTree = SOURCE_ROOT; };
-		93EAE9A9192C46240043FE67 /* PRSocialHTTPFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRSocialHTTPFormDataRequest.h; path = Classes/Utils/Network/PRSocialHTTPFormDataRequest.h; sourceTree = SOURCE_ROOT; };
-		93EAE9AA192C46240043FE67 /* PRSocialHTTPFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRSocialHTTPFormDataRequest.m; path = Classes/Utils/Network/PRSocialHTTPFormDataRequest.m; sourceTree = SOURCE_ROOT; };
-		93EE296D192C785B001DB007 /* PRSocialGlobalHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRSocialGlobalHUD.h; path = Classes/Utils/UI/PRSocialGlobalHUD.h; sourceTree = SOURCE_ROOT; };
-		93EE296E192C785B001DB007 /* PRSocialGlobalHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRSocialGlobalHUD.m; path = Classes/Utils/UI/PRSocialGlobalHUD.m; sourceTree = SOURCE_ROOT; };
-		9D31501A77D14BB9A8844236 /* Pods-PRSocialDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRSocialDemo.xcconfig"; path = "Pods/Pods-PRSocialDemo.xcconfig"; sourceTree = "<group>"; };
-		FEDD4F2D380D409DB02D6740 /* libPods-PRSocialDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PRSocialDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		9370749E192AE68D009561E1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93B2D1EB19A1F67400ED196D /* libz.dylib in Frameworks */,
-				93B2D1E919A1F65600ED196D /* libstdc++.dylib in Frameworks */,
-				93B2D1E519A1F63E00ED196D /* SystemConfiguration.framework in Frameworks */,
-				93B2D1E319A1F62D00ED196D /* CoreTelephony.framework in Frameworks */,
-				93B2D1DF19A1F61900ED196D /* libsqlite3.dylib in Frameworks */,
-				9370750B192B2F45009561E1 /* Social.framework in Frameworks */,
-				937074A7192AE68D009561E1 /* CoreGraphics.framework in Frameworks */,
-				937074A9192AE68D009561E1 /* UIKit.framework in Frameworks */,
-				937074DA192AE8BE009561E1 /* libWeChatSDK.a in Frameworks */,
-				937074A5192AE68D009561E1 /* Foundation.framework in Frameworks */,
-				19B6CDB8150B47D8A3FBC71A /* libPods-PRSocialDemo.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		937074B9192AE68D009561E1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				937074BE192AE68D009561E1 /* XCTest.framework in Frameworks */,
-				937074C0192AE68D009561E1 /* UIKit.framework in Frameworks */,
-				937074BF192AE68D009561E1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		93707498192AE68D009561E1 = {
-			isa = PBXGroup;
-			children = (
-				937074AA192AE68D009561E1 /* PRSocialDemo */,
-				937074C3192AE68D009561E1 /* PRSocialDemoTests */,
-				937074A3192AE68D009561E1 /* Frameworks */,
-				937074A2192AE68D009561E1 /* Products */,
-				9D31501A77D14BB9A8844236 /* Pods-PRSocialDemo.xcconfig */,
-			);
-			sourceTree = "<group>";
-		};
-		937074A2192AE68D009561E1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				937074A1192AE68D009561E1 /* PRSocialDemo.app */,
-				937074BC192AE68D009561E1 /* PRSocialDemoTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		937074A3192AE68D009561E1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				93B2D1EA19A1F67400ED196D /* libz.dylib */,
-				93B2D1E819A1F65600ED196D /* libstdc++.dylib */,
-				93B2D1E619A1F64A00ED196D /* libc++.dylib */,
-				93B2D1E419A1F63E00ED196D /* SystemConfiguration.framework */,
-				93B2D1E219A1F62D00ED196D /* CoreTelephony.framework */,
-				93B2D1E019A1F62200ED196D /* CFNetwork.framework */,
-				93B2D1DE19A1F61900ED196D /* libsqlite3.dylib */,
-				9370750A192B2F45009561E1 /* Social.framework */,
-				93707505192B2D74009561E1 /* libPods-PRSocialDemo.a */,
-				937074D6192AE8BE009561E1 /* WeChat */,
-				937074A4192AE68D009561E1 /* Foundation.framework */,
-				937074A6192AE68D009561E1 /* CoreGraphics.framework */,
-				937074A8192AE68D009561E1 /* UIKit.framework */,
-				937074BD192AE68D009561E1 /* XCTest.framework */,
-				FEDD4F2D380D409DB02D6740 /* libPods-PRSocialDemo.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		937074AA192AE68D009561E1 /* PRSocialDemo */ = {
-			isa = PBXGroup;
-			children = (
-				937074E3192AEBF6009561E1 /* Classes */,
-				937074DF192AEB19009561E1 /* UI */,
-				937074B3192AE68D009561E1 /* PRAppDelegate.h */,
-				937074B4192AE68D009561E1 /* PRAppDelegate.m */,
-				937074B6192AE68D009561E1 /* Images.xcassets */,
-				937074AB192AE68D009561E1 /* Supporting Files */,
-			);
-			path = PRSocialDemo;
-			sourceTree = "<group>";
-		};
-		937074AB192AE68D009561E1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				937074AC192AE68D009561E1 /* PRSocialDemo-Info.plist */,
-				937074AD192AE68D009561E1 /* InfoPlist.strings */,
-				937074B0192AE68D009561E1 /* main.m */,
-				937074B2192AE68D009561E1 /* PRSocialDemo-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		937074C3192AE68D009561E1 /* PRSocialDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				937074C9192AE68D009561E1 /* PRSocialDemoTests.m */,
-				937074C4192AE68D009561E1 /* Supporting Files */,
-			);
-			path = PRSocialDemoTests;
-			sourceTree = "<group>";
-		};
-		937074C4192AE68D009561E1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				937074C5192AE68D009561E1 /* PRSocialDemoTests-Info.plist */,
-				937074C6192AE68D009561E1 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		937074D6192AE8BE009561E1 /* WeChat */ = {
-			isa = PBXGroup;
-			children = (
-				937074D7192AE8BE009561E1 /* libWeChatSDK.a */,
-				937074D8192AE8BE009561E1 /* WXApi.h */,
-				937074D9192AE8BE009561E1 /* WXApiObject.h */,
-			);
-			name = WeChat;
-			path = Frameworks/WeChat;
-			sourceTree = "<group>";
-		};
-		937074DF192AEB19009561E1 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				937074E0192AEB22009561E1 /* PRRootViewController.h */,
-				937074E1192AEB22009561E1 /* PRRootViewController.m */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
-		937074E3192AEBF6009561E1 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				93DC96EE195C0C10004D796E /* Model */,
-				93707514192B3AF4009561E1 /* Utils */,
-				93707549192B4B2C009561E1 /* Auth */,
-				937074FE192B08EC009561E1 /* PRSocial.h */,
-				937074E7192AEC14009561E1 /* PRSocialService.h */,
-				937074E8192AEC14009561E1 /* PRSocialService.m */,
-				937074F8192AF36E009561E1 /* PRSocialConfig.h */,
-				937074F9192AF36E009561E1 /* PRSocialConfig.m */,
-				93B2D1DB19A1F26300ED196D /* PRTencentService.h */,
-				93B2D1DC19A1F26300ED196D /* PRTencentService.m */,
-				937074F0192AF035009561E1 /* PRWeChatService.h */,
-				937074F1192AF035009561E1 /* PRWeChatService.m */,
-				93707507192B2F28009561E1 /* PRWeiboService.h */,
-				93707508192B2F28009561E1 /* PRWeiboService.m */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		93707514192B3AF4009561E1 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				93707526192B3DB3009561E1 /* Categories */,
-				93707542192B499A009561E1 /* Network */,
-				93707534192B45A1009561E1 /* UI */,
-			);
-			name = Utils;
-			sourceTree = "<group>";
-		};
-		93707526192B3DB3009561E1 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				93461E11192B7FA1007D7DA0 /* NSString+PRSocialASCIILength.h */,
-				93461E12192B7FA1007D7DA0 /* NSString+PRSocialASCIILength.m */,
-				93707527192B3DCE009561E1 /* NSNumber+PRSocialURLCoding.h */,
-				93707528192B3DCE009561E1 /* NSNumber+PRSocialURLCoding.m */,
-				93707529192B3DCE009561E1 /* NSString+PRSocialURLCoding.h */,
-				9370752A192B3DCE009561E1 /* NSString+PRSocialURLCoding.m */,
-				93461E0B192B6AA7007D7DA0 /* UIApplication+PRSocialTopWindow.h */,
-				93461E0C192B6AA7007D7DA0 /* UIApplication+PRSocialTopWindow.m */,
-				93EAE9A6192C437D0043FE67 /* NSObject+PRSocialJSONKeyPath.h */,
-				93EAE9A7192C437D0043FE67 /* NSObject+PRSocialJSONKeyPath.m */,
-				933FCF1B196655C200F45D83 /* UIWindow+PRSocialTopViewController.h */,
-				933FCF1C196655C200F45D83 /* UIWindow+PRSocialTopViewController.m */,
-			);
-			name = Categories;
-			sourceTree = "<group>";
-		};
-		93707534192B45A1009561E1 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				93707535192B45F6009561E1 /* PRSocialAuthWebViewController.h */,
-				93707536192B45F6009561E1 /* PRSocialAuthWebViewController.m */,
-				93461E14192B8039007D7DA0 /* PRSocialComposeViewController.h */,
-				93461E15192B8039007D7DA0 /* PRSocialComposeViewController.m */,
-				93EE296D192C785B001DB007 /* PRSocialGlobalHUD.h */,
-				93EE296E192C785B001DB007 /* PRSocialGlobalHUD.m */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
-		93707542192B499A009561E1 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				93707546192B49F2009561E1 /* PRSocialHTTPRequest.h */,
-				93707547192B49F2009561E1 /* PRSocialHTTPRequest.m */,
-				93EAE9A9192C46240043FE67 /* PRSocialHTTPFormDataRequest.h */,
-				93EAE9AA192C46240043FE67 /* PRSocialHTTPFormDataRequest.m */,
-			);
-			name = Network;
-			sourceTree = "<group>";
-		};
-		93707549192B4B2C009561E1 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				93707556192B5264009561E1 /* Base */,
-				93B2E5EF19A1D9A600895437 /* Tencent */,
-				937CA08A199E033C00732FD6 /* WeChat */,
-				9370755D192B5381009561E1 /* Weibo */,
-			);
-			name = Auth;
-			sourceTree = "<group>";
-		};
-		93707556192B5264009561E1 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				93707557192B535F009561E1 /* PRSocialAuth.h */,
-				93707558192B535F009561E1 /* PRSocialAuth.m */,
-				93707559192B535F009561E1 /* PRSocialOAuth.h */,
-				9370755A192B535F009561E1 /* PRSocialOAuth.m */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		9370755D192B5381009561E1 /* Weibo */ = {
-			isa = PBXGroup;
-			children = (
-				93EAE9A3192C39E60043FE67 /* PRWeiboAuth.h */,
-				93EAE9A4192C39E60043FE67 /* PRWeiboAuth.m */,
-				9370755E192B53AC009561E1 /* PRWeiboOAuth.h */,
-				9370755F192B53AC009561E1 /* PRWeiboOAuth.m */,
-			);
-			name = Weibo;
-			sourceTree = "<group>";
-		};
-		937CA08A199E033C00732FD6 /* WeChat */ = {
-			isa = PBXGroup;
-			children = (
-				937CA08B199E035700732FD6 /* PRWeChatAuth.h */,
-				937CA08C199E035700732FD6 /* PRWeChatAuth.m */,
-				937CA08E199E037E00732FD6 /* PRWeChatOAuth.h */,
-				937CA08F199E037E00732FD6 /* PRWeChatOAuth.m */,
-			);
-			name = WeChat;
-			sourceTree = "<group>";
-		};
-		93B2E5EF19A1D9A600895437 /* Tencent */ = {
-			isa = PBXGroup;
-			children = (
-				93B2D1D419A1EDCF00ED196D /* PRTencentAuth.h */,
-				93B2D1D519A1EDCF00ED196D /* PRTencentAuth.m */,
-				93B2D1D719A1EE6B00ED196D /* PRTencentOAuth.h */,
-				93B2D1D819A1EE6B00ED196D /* PRTencentOAuth.m */,
-			);
-			name = Tencent;
-			sourceTree = "<group>";
-		};
-		93DC96EE195C0C10004D796E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				93DC96EF195C0C3F004D796E /* PRSocialUserInfo.h */,
-				93DC96F0195C0C3F004D796E /* PRSocialUserInfo.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		937074A0192AE68D009561E1 /* PRSocialDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 937074CD192AE68D009561E1 /* Build configuration list for PBXNativeTarget "PRSocialDemo" */;
-			buildPhases = (
-				48F6E152508C443E8297F72F /* Check Pods Manifest.lock */,
-				9370749D192AE68D009561E1 /* Sources */,
-				9370749E192AE68D009561E1 /* Frameworks */,
-				9370749F192AE68D009561E1 /* Resources */,
-				B8039DAFD14447149D7C3B5F /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PRSocialDemo;
-			productName = PRSocialDemo;
-			productReference = 937074A1192AE68D009561E1 /* PRSocialDemo.app */;
-			productType = "com.apple.product-type.application";
-		};
-		937074BB192AE68D009561E1 /* PRSocialDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 937074D0192AE68D009561E1 /* Build configuration list for PBXNativeTarget "PRSocialDemoTests" */;
-			buildPhases = (
-				937074B8192AE68D009561E1 /* Sources */,
-				937074B9192AE68D009561E1 /* Frameworks */,
-				937074BA192AE68D009561E1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				937074C2192AE68D009561E1 /* PBXTargetDependency */,
-			);
-			name = PRSocialDemoTests;
-			productName = PRSocialDemoTests;
-			productReference = 937074BC192AE68D009561E1 /* PRSocialDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		93707499192AE68D009561E1 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = PR;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Project Rhinestone";
-				TargetAttributes = {
-					937074BB192AE68D009561E1 = {
-						TestTargetID = 937074A0192AE68D009561E1;
-					};
-				};
-			};
-			buildConfigurationList = 9370749C192AE68D009561E1 /* Build configuration list for PBXProject "PRSocialDemo" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 93707498192AE68D009561E1;
-			productRefGroup = 937074A2192AE68D009561E1 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				937074A0192AE68D009561E1 /* PRSocialDemo */,
-				937074BB192AE68D009561E1 /* PRSocialDemoTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		9370749F192AE68D009561E1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				937074AF192AE68D009561E1 /* InfoPlist.strings in Resources */,
-				937074B7192AE68D009561E1 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		937074BA192AE68D009561E1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				937074C8192AE68D009561E1 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		48F6E152508C443E8297F72F /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B8039DAFD14447149D7C3B5F /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-PRSocialDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		9370749D192AE68D009561E1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9370752B192B3DCE009561E1 /* NSNumber+PRSocialURLCoding.m in Sources */,
-				937074F2192AF035009561E1 /* PRWeChatService.m in Sources */,
-				93EAE9A5192C39E60043FE67 /* PRWeiboAuth.m in Sources */,
-				93707548192B49F2009561E1 /* PRSocialHTTPRequest.m in Sources */,
-				937074E2192AEB22009561E1 /* PRRootViewController.m in Sources */,
-				93B2D1DD19A1F26300ED196D /* PRTencentService.m in Sources */,
-				93DC96F1195C0C3F004D796E /* PRSocialUserInfo.m in Sources */,
-				93EE296F192C785B001DB007 /* PRSocialGlobalHUD.m in Sources */,
-				93461E13192B7FA1007D7DA0 /* NSString+PRSocialASCIILength.m in Sources */,
-				93461E16192B8039007D7DA0 /* PRSocialComposeViewController.m in Sources */,
-				93B2D1D919A1EE6B00ED196D /* PRTencentOAuth.m in Sources */,
-				9370755B192B535F009561E1 /* PRSocialAuth.m in Sources */,
-				93EAE9AB192C46240043FE67 /* PRSocialHTTPFormDataRequest.m in Sources */,
-				937CA090199E037E00732FD6 /* PRWeChatOAuth.m in Sources */,
-				937074B5192AE68D009561E1 /* PRAppDelegate.m in Sources */,
-				937074FA192AF36E009561E1 /* PRSocialConfig.m in Sources */,
-				93707509192B2F28009561E1 /* PRWeiboService.m in Sources */,
-				93707537192B45F6009561E1 /* PRSocialAuthWebViewController.m in Sources */,
-				9370755C192B535F009561E1 /* PRSocialOAuth.m in Sources */,
-				933FCF1D196655C200F45D83 /* UIWindow+PRSocialTopViewController.m in Sources */,
-				937CA08D199E035700732FD6 /* PRWeChatAuth.m in Sources */,
-				9370752C192B3DCE009561E1 /* NSString+PRSocialURLCoding.m in Sources */,
-				937074E9192AEC14009561E1 /* PRSocialService.m in Sources */,
-				93EAE9A8192C437D0043FE67 /* NSObject+PRSocialJSONKeyPath.m in Sources */,
-				93707560192B53AC009561E1 /* PRWeiboOAuth.m in Sources */,
-				937074B1192AE68D009561E1 /* main.m in Sources */,
-				93461E0D192B6AA7007D7DA0 /* UIApplication+PRSocialTopWindow.m in Sources */,
-				93B2D1D619A1EDCF00ED196D /* PRTencentAuth.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		937074B8192AE68D009561E1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				937074CA192AE68D009561E1 /* PRSocialDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		937074C2192AE68D009561E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 937074A0192AE68D009561E1 /* PRSocialDemo */;
-			targetProxy = 937074C1192AE68D009561E1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		937074AD192AE68D009561E1 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				937074AE192AE68D009561E1 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		937074C6192AE68D009561E1 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				937074C7192AE68D009561E1 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		937074CB192AE68D009561E1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		937074CC192AE68D009561E1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		937074CE192AE68D009561E1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D31501A77D14BB9A8844236 /* Pods-PRSocialDemo.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PRSocialDemo/PRSocialDemo-Prefix.pch";
-				INFOPLIST_FILE = "PRSocialDemo/PRSocialDemo-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/WeChat",
-					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		937074CF192AE68D009561E1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D31501A77D14BB9A8844236 /* Pods-PRSocialDemo.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PRSocialDemo/PRSocialDemo-Prefix.pch";
-				INFOPLIST_FILE = "PRSocialDemo/PRSocialDemo-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/WeChat",
-					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		937074D1192AE68D009561E1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PRSocialDemo.app/PRSocialDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PRSocialDemo/PRSocialDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "PRSocialDemoTests/PRSocialDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		937074D2192AE68D009561E1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PRSocialDemo.app/PRSocialDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PRSocialDemo/PRSocialDemo-Prefix.pch";
-				INFOPLIST_FILE = "PRSocialDemoTests/PRSocialDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		9370749C192AE68D009561E1 /* Build configuration list for PBXProject "PRSocialDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				937074CB192AE68D009561E1 /* Debug */,
-				937074CC192AE68D009561E1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		937074CD192AE68D009561E1 /* Build configuration list for PBXNativeTarget "PRSocialDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				937074CE192AE68D009561E1 /* Debug */,
-				937074CF192AE68D009561E1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		937074D0192AE68D009561E1 /* Build configuration list for PBXNativeTarget "PRSocialDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				937074D1192AE68D009561E1 /* Debug */,
-				937074D2192AE68D009561E1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 93707499192AE68D009561E1 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>19B6CDB8150B47D8A3FBC71A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FEDD4F2D380D409DB02D6740</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>28DC9DDCF84FBAA964D156A6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5FF7207DCBFF1A1583D6DDEE</string>
+				<string>DEF7DF1DDE47CCDA34A8CCE5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>48F6E152508C443E8297F72F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>5FF7207DCBFF1A1583D6DDEE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-PRSocialDemo.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-PRSocialDemo/Pods-PRSocialDemo.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>933FCF1B196655C200F45D83</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIWindow+PRSocialTopViewController.h</string>
+			<key>path</key>
+			<string>Classes/Utils/Categories/UIWindow+PRSocialTopViewController.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>933FCF1C196655C200F45D83</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIWindow+PRSocialTopViewController.m</string>
+			<key>path</key>
+			<string>Classes/Utils/Categories/UIWindow+PRSocialTopViewController.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>933FCF1D196655C200F45D83</key>
+		<dict>
+			<key>fileRef</key>
+			<string>933FCF1C196655C200F45D83</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93461E0B192B6AA7007D7DA0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIApplication+PRSocialTopWindow.h</string>
+			<key>path</key>
+			<string>Classes/Utils/Categories/UIApplication+PRSocialTopWindow.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93461E0C192B6AA7007D7DA0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>UIApplication+PRSocialTopWindow.m</string>
+			<key>path</key>
+			<string>Classes/Utils/Categories/UIApplication+PRSocialTopWindow.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93461E0D192B6AA7007D7DA0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93461E0C192B6AA7007D7DA0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93461E11192B7FA1007D7DA0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>NSString+PRSocialASCIILength.h</string>
+			<key>path</key>
+			<string>Classes/Utils/Categories/NSString+PRSocialASCIILength.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93461E12192B7FA1007D7DA0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>NSString+PRSocialASCIILength.m</string>
+			<key>path</key>
+			<string>Classes/Utils/Categories/NSString+PRSocialASCIILength.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93461E13192B7FA1007D7DA0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93461E12192B7FA1007D7DA0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93461E14192B8039007D7DA0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRSocialComposeViewController.h</string>
+			<key>path</key>
+			<string>Classes/Utils/UI/PRSocialComposeViewController.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93461E15192B8039007D7DA0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRSocialComposeViewController.m</string>
+			<key>path</key>
+			<string>Classes/Utils/UI/PRSocialComposeViewController.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93461E16192B8039007D7DA0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93461E15192B8039007D7DA0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93707498192AE68D009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>937074AA192AE68D009561E1</string>
+				<string>937074C3192AE68D009561E1</string>
+				<string>937074A3192AE68D009561E1</string>
+				<string>937074A2192AE68D009561E1</string>
+				<string>28DC9DDCF84FBAA964D156A6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93707499192AE68D009561E1</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>PR</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Project Rhinestone</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>937074BB192AE68D009561E1</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>937074A0192AE68D009561E1</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>9370749C192AE68D009561E1</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>93707498192AE68D009561E1</string>
+			<key>productRefGroup</key>
+			<string>937074A2192AE68D009561E1</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>937074A0192AE68D009561E1</string>
+				<string>937074BB192AE68D009561E1</string>
+			</array>
+		</dict>
+		<key>9370749C192AE68D009561E1</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>937074CB192AE68D009561E1</string>
+				<string>937074CC192AE68D009561E1</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9370749D192AE68D009561E1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9370752B192B3DCE009561E1</string>
+				<string>937074F2192AF035009561E1</string>
+				<string>93EAE9A5192C39E60043FE67</string>
+				<string>93707548192B49F2009561E1</string>
+				<string>937074E2192AEB22009561E1</string>
+				<string>93B2D1DD19A1F26300ED196D</string>
+				<string>93DC96F1195C0C3F004D796E</string>
+				<string>93EE296F192C785B001DB007</string>
+				<string>93461E13192B7FA1007D7DA0</string>
+				<string>93461E16192B8039007D7DA0</string>
+				<string>93B2D1D919A1EE6B00ED196D</string>
+				<string>9370755B192B535F009561E1</string>
+				<string>93EAE9AB192C46240043FE67</string>
+				<string>937CA090199E037E00732FD6</string>
+				<string>937074B5192AE68D009561E1</string>
+				<string>937074FA192AF36E009561E1</string>
+				<string>93707509192B2F28009561E1</string>
+				<string>93707537192B45F6009561E1</string>
+				<string>9370755C192B535F009561E1</string>
+				<string>933FCF1D196655C200F45D83</string>
+				<string>937CA08D199E035700732FD6</string>
+				<string>9370752C192B3DCE009561E1</string>
+				<string>937074E9192AEC14009561E1</string>
+				<string>93EAE9A8192C437D0043FE67</string>
+				<string>93707560192B53AC009561E1</string>
+				<string>937074B1192AE68D009561E1</string>
+				<string>93461E0D192B6AA7007D7DA0</string>
+				<string>93B2D1D619A1EDCF00ED196D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9370749E192AE68D009561E1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>93B2D1EB19A1F67400ED196D</string>
+				<string>93B2D1E919A1F65600ED196D</string>
+				<string>93B2D1E519A1F63E00ED196D</string>
+				<string>93B2D1E319A1F62D00ED196D</string>
+				<string>93B2D1DF19A1F61900ED196D</string>
+				<string>9370750B192B2F45009561E1</string>
+				<string>937074A7192AE68D009561E1</string>
+				<string>937074A9192AE68D009561E1</string>
+				<string>937074DA192AE8BE009561E1</string>
+				<string>937074A5192AE68D009561E1</string>
+				<string>19B6CDB8150B47D8A3FBC71A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9370749F192AE68D009561E1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>937074AF192AE68D009561E1</string>
+				<string>937074B7192AE68D009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>937074A0192AE68D009561E1</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>937074CD192AE68D009561E1</string>
+			<key>buildPhases</key>
+			<array>
+				<string>48F6E152508C443E8297F72F</string>
+				<string>9370749D192AE68D009561E1</string>
+				<string>9370749E192AE68D009561E1</string>
+				<string>9370749F192AE68D009561E1</string>
+				<string>B8039DAFD14447149D7C3B5F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>PRSocialDemo</string>
+			<key>productName</key>
+			<string>PRSocialDemo</string>
+			<key>productReference</key>
+			<string>937074A1192AE68D009561E1</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>937074A1192AE68D009561E1</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>PRSocialDemo.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>937074A2192AE68D009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>937074A1192AE68D009561E1</string>
+				<string>937074BC192AE68D009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074A3192AE68D009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93B2D1EA19A1F67400ED196D</string>
+				<string>93B2D1E819A1F65600ED196D</string>
+				<string>93B2D1E619A1F64A00ED196D</string>
+				<string>93B2D1E419A1F63E00ED196D</string>
+				<string>93B2D1E219A1F62D00ED196D</string>
+				<string>93B2D1E019A1F62200ED196D</string>
+				<string>93B2D1DE19A1F61900ED196D</string>
+				<string>9370750A192B2F45009561E1</string>
+				<string>93707505192B2D74009561E1</string>
+				<string>937074D6192AE8BE009561E1</string>
+				<string>937074A4192AE68D009561E1</string>
+				<string>937074A6192AE68D009561E1</string>
+				<string>937074A8192AE68D009561E1</string>
+				<string>937074BD192AE68D009561E1</string>
+				<string>FEDD4F2D380D409DB02D6740</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074A4192AE68D009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>937074A5192AE68D009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074A4192AE68D009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074A6192AE68D009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>937074A7192AE68D009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074A6192AE68D009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074A8192AE68D009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>937074A9192AE68D009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074A8192AE68D009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074AA192AE68D009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>937074E3192AEBF6009561E1</string>
+				<string>937074DF192AEB19009561E1</string>
+				<string>937074B3192AE68D009561E1</string>
+				<string>937074B4192AE68D009561E1</string>
+				<string>937074B6192AE68D009561E1</string>
+				<string>937074AB192AE68D009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>PRSocialDemo</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074AB192AE68D009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>937074AC192AE68D009561E1</string>
+				<string>937074AD192AE68D009561E1</string>
+				<string>937074B0192AE68D009561E1</string>
+				<string>937074B2192AE68D009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074AC192AE68D009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>PRSocialDemo-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074AD192AE68D009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>937074AE192AE68D009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074AE192AE68D009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074AF192AE68D009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074AD192AE68D009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074B0192AE68D009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074B1192AE68D009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074B0192AE68D009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074B2192AE68D009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PRSocialDemo-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074B3192AE68D009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PRAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074B4192AE68D009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PRAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074B5192AE68D009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074B4192AE68D009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074B6192AE68D009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074B7192AE68D009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074B6192AE68D009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074B8192AE68D009561E1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>937074CA192AE68D009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>937074B9192AE68D009561E1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>937074BE192AE68D009561E1</string>
+				<string>937074C0192AE68D009561E1</string>
+				<string>937074BF192AE68D009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>937074BA192AE68D009561E1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>937074C8192AE68D009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>937074BB192AE68D009561E1</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>937074D0192AE68D009561E1</string>
+			<key>buildPhases</key>
+			<array>
+				<string>937074B8192AE68D009561E1</string>
+				<string>937074B9192AE68D009561E1</string>
+				<string>937074BA192AE68D009561E1</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>937074C2192AE68D009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>PRSocialDemoTests</string>
+			<key>productName</key>
+			<string>PRSocialDemoTests</string>
+			<key>productReference</key>
+			<string>937074BC192AE68D009561E1</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>937074BC192AE68D009561E1</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>PRSocialDemoTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>937074BD192AE68D009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>937074BE192AE68D009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074BD192AE68D009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074BF192AE68D009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074A4192AE68D009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074C0192AE68D009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074A8192AE68D009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074C1192AE68D009561E1</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>93707499192AE68D009561E1</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>937074A0192AE68D009561E1</string>
+			<key>remoteInfo</key>
+			<string>PRSocialDemo</string>
+		</dict>
+		<key>937074C2192AE68D009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>937074A0192AE68D009561E1</string>
+			<key>targetProxy</key>
+			<string>937074C1192AE68D009561E1</string>
+		</dict>
+		<key>937074C3192AE68D009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>937074C9192AE68D009561E1</string>
+				<string>937074C4192AE68D009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>PRSocialDemoTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074C4192AE68D009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>937074C5192AE68D009561E1</string>
+				<string>937074C6192AE68D009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074C5192AE68D009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>PRSocialDemoTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074C6192AE68D009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>937074C7192AE68D009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074C7192AE68D009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074C8192AE68D009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074C6192AE68D009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074C9192AE68D009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PRSocialDemoTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074CA192AE68D009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074C9192AE68D009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074CB192AE68D009561E1</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>937074CC192AE68D009561E1</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>937074CD192AE68D009561E1</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>937074CE192AE68D009561E1</string>
+				<string>937074CF192AE68D009561E1</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>937074CE192AE68D009561E1</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>5FF7207DCBFF1A1583D6DDEE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_32_BIT)</string>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PRSocialDemo/PRSocialDemo-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>PRSocialDemo/PRSocialDemo-Info.plist</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/Frameworks/WeChat</string>
+					<string>$(PROJECT_DIR)/Pods/build/Debug-iphoneos</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>937074CF192AE68D009561E1</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>DEF7DF1DDE47CCDA34A8CCE5</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_32_BIT)</string>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PRSocialDemo/PRSocialDemo-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>PRSocialDemo/PRSocialDemo-Info.plist</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)/Frameworks/WeChat</string>
+					<string>$(PROJECT_DIR)/Pods/build/Debug-iphoneos</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>937074D0192AE68D009561E1</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>937074D1192AE68D009561E1</string>
+				<string>937074D2192AE68D009561E1</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>937074D1192AE68D009561E1</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/PRSocialDemo.app/PRSocialDemo</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PRSocialDemo/PRSocialDemo-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>PRSocialDemoTests/PRSocialDemoTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>937074D2192AE68D009561E1</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/PRSocialDemo.app/PRSocialDemo</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PRSocialDemo/PRSocialDemo-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>PRSocialDemoTests/PRSocialDemoTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>937074D6192AE8BE009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>937074D7192AE8BE009561E1</string>
+				<string>937074D8192AE8BE009561E1</string>
+				<string>937074D9192AE8BE009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>WeChat</string>
+			<key>path</key>
+			<string>Frameworks/WeChat</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074D7192AE8BE009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>path</key>
+			<string>libWeChatSDK.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074D8192AE8BE009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WXApi.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074D9192AE8BE009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WXApiObject.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074DA192AE8BE009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074D7192AE8BE009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074DF192AEB19009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>937074E0192AEB22009561E1</string>
+				<string>937074E1192AEB22009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>UI</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074E0192AEB22009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PRRootViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074E1192AEB22009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PRRootViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074E2192AEB22009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074E1192AEB22009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074E3192AEBF6009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93DC96EE195C0C10004D796E</string>
+				<string>93707514192B3AF4009561E1</string>
+				<string>93707549192B4B2C009561E1</string>
+				<string>937074FE192B08EC009561E1</string>
+				<string>937074E7192AEC14009561E1</string>
+				<string>937074E8192AEC14009561E1</string>
+				<string>937074F8192AF36E009561E1</string>
+				<string>937074F9192AF36E009561E1</string>
+				<string>93B2D1DB19A1F26300ED196D</string>
+				<string>93B2D1DC19A1F26300ED196D</string>
+				<string>937074F0192AF035009561E1</string>
+				<string>937074F1192AF035009561E1</string>
+				<string>93707507192B2F28009561E1</string>
+				<string>93707508192B2F28009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937074E7192AEC14009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRSocialService.h</string>
+			<key>path</key>
+			<string>Classes/PRSocialService.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>937074E8192AEC14009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRSocialService.m</string>
+			<key>path</key>
+			<string>Classes/PRSocialService.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>937074E9192AEC14009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074E8192AEC14009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074F0192AF035009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRWeChatService.h</string>
+			<key>path</key>
+			<string>Classes/PRWeChatService.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>937074F1192AF035009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRWeChatService.m</string>
+			<key>path</key>
+			<string>Classes/PRWeChatService.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>937074F2192AF035009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074F1192AF035009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074F8192AF36E009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRSocialConfig.h</string>
+			<key>path</key>
+			<string>Classes/PRSocialConfig.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>937074F9192AF36E009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRSocialConfig.m</string>
+			<key>path</key>
+			<string>Classes/PRSocialConfig.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>937074FA192AF36E009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937074F9192AF36E009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937074FE192B08EC009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRSocial.h</string>
+			<key>path</key>
+			<string>Classes/PRSocial.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93707505192B2D74009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libPods-PRSocialDemo.a</string>
+			<key>path</key>
+			<string>Pods/build/Debug-iphoneos/libPods-PRSocialDemo.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93707507192B2F28009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRWeiboService.h</string>
+			<key>path</key>
+			<string>Classes/PRWeiboService.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93707508192B2F28009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRWeiboService.m</string>
+			<key>path</key>
+			<string>Classes/PRWeiboService.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93707509192B2F28009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93707508192B2F28009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9370750A192B2F45009561E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Social.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Social.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9370750B192B2F45009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9370750A192B2F45009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93707514192B3AF4009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93707526192B3DB3009561E1</string>
+				<string>93707542192B499A009561E1</string>
+				<string>93707534192B45A1009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Utils</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93707526192B3DB3009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93461E11192B7FA1007D7DA0</string>
+				<string>93461E12192B7FA1007D7DA0</string>
+				<string>93707527192B3DCE009561E1</string>
+				<string>93707528192B3DCE009561E1</string>
+				<string>93707529192B3DCE009561E1</string>
+				<string>9370752A192B3DCE009561E1</string>
+				<string>93461E0B192B6AA7007D7DA0</string>
+				<string>93461E0C192B6AA7007D7DA0</string>
+				<string>93EAE9A6192C437D0043FE67</string>
+				<string>93EAE9A7192C437D0043FE67</string>
+				<string>933FCF1B196655C200F45D83</string>
+				<string>933FCF1C196655C200F45D83</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Categories</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93707527192B3DCE009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>NSNumber+PRSocialURLCoding.h</string>
+			<key>path</key>
+			<string>Classes/Utils/Categories/NSNumber+PRSocialURLCoding.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93707528192B3DCE009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>NSNumber+PRSocialURLCoding.m</string>
+			<key>path</key>
+			<string>Classes/Utils/Categories/NSNumber+PRSocialURLCoding.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93707529192B3DCE009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>NSString+PRSocialURLCoding.h</string>
+			<key>path</key>
+			<string>Classes/Utils/Categories/NSString+PRSocialURLCoding.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>9370752A192B3DCE009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>NSString+PRSocialURLCoding.m</string>
+			<key>path</key>
+			<string>Classes/Utils/Categories/NSString+PRSocialURLCoding.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>9370752B192B3DCE009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93707528192B3DCE009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9370752C192B3DCE009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9370752A192B3DCE009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93707534192B45A1009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93707535192B45F6009561E1</string>
+				<string>93707536192B45F6009561E1</string>
+				<string>93461E14192B8039007D7DA0</string>
+				<string>93461E15192B8039007D7DA0</string>
+				<string>93EE296D192C785B001DB007</string>
+				<string>93EE296E192C785B001DB007</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>UI</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93707535192B45F6009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRSocialAuthWebViewController.h</string>
+			<key>path</key>
+			<string>Classes/Utils/UI/PRSocialAuthWebViewController.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93707536192B45F6009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRSocialAuthWebViewController.m</string>
+			<key>path</key>
+			<string>Classes/Utils/UI/PRSocialAuthWebViewController.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93707537192B45F6009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93707536192B45F6009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93707542192B499A009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93707546192B49F2009561E1</string>
+				<string>93707547192B49F2009561E1</string>
+				<string>93EAE9A9192C46240043FE67</string>
+				<string>93EAE9AA192C46240043FE67</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Network</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93707546192B49F2009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRSocialHTTPRequest.h</string>
+			<key>path</key>
+			<string>Classes/Utils/Network/PRSocialHTTPRequest.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93707547192B49F2009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRSocialHTTPRequest.m</string>
+			<key>path</key>
+			<string>Classes/Utils/Network/PRSocialHTTPRequest.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93707548192B49F2009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93707547192B49F2009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93707549192B4B2C009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93707556192B5264009561E1</string>
+				<string>93B2E5EF19A1D9A600895437</string>
+				<string>937CA08A199E033C00732FD6</string>
+				<string>9370755D192B5381009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Auth</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93707556192B5264009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93707557192B535F009561E1</string>
+				<string>93707558192B535F009561E1</string>
+				<string>93707559192B535F009561E1</string>
+				<string>9370755A192B535F009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93707557192B535F009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRSocialAuth.h</string>
+			<key>path</key>
+			<string>Classes/Auth/Base/PRSocialAuth.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93707558192B535F009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRSocialAuth.m</string>
+			<key>path</key>
+			<string>Classes/Auth/Base/PRSocialAuth.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93707559192B535F009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRSocialOAuth.h</string>
+			<key>path</key>
+			<string>Classes/Auth/Base/PRSocialOAuth.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>9370755A192B535F009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRSocialOAuth.m</string>
+			<key>path</key>
+			<string>Classes/Auth/Base/PRSocialOAuth.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>9370755B192B535F009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93707558192B535F009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9370755C192B535F009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9370755A192B535F009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9370755D192B5381009561E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93EAE9A3192C39E60043FE67</string>
+				<string>93EAE9A4192C39E60043FE67</string>
+				<string>9370755E192B53AC009561E1</string>
+				<string>9370755F192B53AC009561E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Weibo</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9370755E192B53AC009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRWeiboOAuth.h</string>
+			<key>path</key>
+			<string>Classes/Auth/Weibo/PRWeiboOAuth.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>9370755F192B53AC009561E1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRWeiboOAuth.m</string>
+			<key>path</key>
+			<string>Classes/Auth/Weibo/PRWeiboOAuth.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93707560192B53AC009561E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9370755F192B53AC009561E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937CA08A199E033C00732FD6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>937CA08B199E035700732FD6</string>
+				<string>937CA08C199E035700732FD6</string>
+				<string>937CA08E199E037E00732FD6</string>
+				<string>937CA08F199E037E00732FD6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>WeChat</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>937CA08B199E035700732FD6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRWeChatAuth.h</string>
+			<key>path</key>
+			<string>Classes/Auth/WeChat/PRWeChatAuth.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>937CA08C199E035700732FD6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRWeChatAuth.m</string>
+			<key>path</key>
+			<string>Classes/Auth/WeChat/PRWeChatAuth.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>937CA08D199E035700732FD6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937CA08C199E035700732FD6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>937CA08E199E037E00732FD6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRWeChatOAuth.h</string>
+			<key>path</key>
+			<string>Classes/Auth/WeChat/PRWeChatOAuth.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>937CA08F199E037E00732FD6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRWeChatOAuth.m</string>
+			<key>path</key>
+			<string>Classes/Auth/WeChat/PRWeChatOAuth.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>937CA090199E037E00732FD6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>937CA08F199E037E00732FD6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93B2D1D419A1EDCF00ED196D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRTencentAuth.h</string>
+			<key>path</key>
+			<string>Classes/Auth/Tencent/PRTencentAuth.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93B2D1D519A1EDCF00ED196D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRTencentAuth.m</string>
+			<key>path</key>
+			<string>Classes/Auth/Tencent/PRTencentAuth.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93B2D1D619A1EDCF00ED196D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93B2D1D519A1EDCF00ED196D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93B2D1D719A1EE6B00ED196D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRTencentOAuth.h</string>
+			<key>path</key>
+			<string>Classes/Auth/Tencent/PRTencentOAuth.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93B2D1D819A1EE6B00ED196D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRTencentOAuth.m</string>
+			<key>path</key>
+			<string>Classes/Auth/Tencent/PRTencentOAuth.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93B2D1D919A1EE6B00ED196D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93B2D1D819A1EE6B00ED196D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93B2D1DB19A1F26300ED196D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRTencentService.h</string>
+			<key>path</key>
+			<string>Classes/PRTencentService.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93B2D1DC19A1F26300ED196D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRTencentService.m</string>
+			<key>path</key>
+			<string>Classes/PRTencentService.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93B2D1DD19A1F26300ED196D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93B2D1DC19A1F26300ED196D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93B2D1DE19A1F61900ED196D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>compiled.mach-o.dylib</string>
+			<key>name</key>
+			<string>libsqlite3.dylib</string>
+			<key>path</key>
+			<string>usr/lib/libsqlite3.dylib</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>93B2D1DF19A1F61900ED196D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93B2D1DE19A1F61900ED196D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93B2D1E019A1F62200ED196D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CFNetwork.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CFNetwork.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>93B2D1E219A1F62D00ED196D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreTelephony.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreTelephony.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>93B2D1E319A1F62D00ED196D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93B2D1E219A1F62D00ED196D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93B2D1E419A1F63E00ED196D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SystemConfiguration.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/SystemConfiguration.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>93B2D1E519A1F63E00ED196D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93B2D1E419A1F63E00ED196D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93B2D1E619A1F64A00ED196D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>compiled.mach-o.dylib</string>
+			<key>name</key>
+			<string>libc++.dylib</string>
+			<key>path</key>
+			<string>usr/lib/libc++.dylib</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>93B2D1E819A1F65600ED196D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>compiled.mach-o.dylib</string>
+			<key>name</key>
+			<string>libstdc++.dylib</string>
+			<key>path</key>
+			<string>usr/lib/libstdc++.dylib</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>93B2D1E919A1F65600ED196D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93B2D1E819A1F65600ED196D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93B2D1EA19A1F67400ED196D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>compiled.mach-o.dylib</string>
+			<key>name</key>
+			<string>libz.dylib</string>
+			<key>path</key>
+			<string>usr/lib/libz.dylib</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>93B2D1EB19A1F67400ED196D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93B2D1EA19A1F67400ED196D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93B2E5EF19A1D9A600895437</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93B2D1D419A1EDCF00ED196D</string>
+				<string>93B2D1D519A1EDCF00ED196D</string>
+				<string>93B2D1D719A1EE6B00ED196D</string>
+				<string>93B2D1D819A1EE6B00ED196D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Tencent</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93DC96EE195C0C10004D796E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93DC96EF195C0C3F004D796E</string>
+				<string>93DC96F0195C0C3F004D796E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93DC96EF195C0C3F004D796E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRSocialUserInfo.h</string>
+			<key>path</key>
+			<string>Classes/Model/PRSocialUserInfo.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93DC96F0195C0C3F004D796E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRSocialUserInfo.m</string>
+			<key>path</key>
+			<string>Classes/Model/PRSocialUserInfo.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93DC96F1195C0C3F004D796E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93DC96F0195C0C3F004D796E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93EAE9A3192C39E60043FE67</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRWeiboAuth.h</string>
+			<key>path</key>
+			<string>Classes/Auth/Weibo/PRWeiboAuth.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93EAE9A4192C39E60043FE67</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRWeiboAuth.m</string>
+			<key>path</key>
+			<string>Classes/Auth/Weibo/PRWeiboAuth.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93EAE9A5192C39E60043FE67</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93EAE9A4192C39E60043FE67</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93EAE9A6192C437D0043FE67</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>NSObject+PRSocialJSONKeyPath.h</string>
+			<key>path</key>
+			<string>Classes/Utils/Categories/NSObject+PRSocialJSONKeyPath.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93EAE9A7192C437D0043FE67</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>NSObject+PRSocialJSONKeyPath.m</string>
+			<key>path</key>
+			<string>Classes/Utils/Categories/NSObject+PRSocialJSONKeyPath.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93EAE9A8192C437D0043FE67</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93EAE9A7192C437D0043FE67</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93EAE9A9192C46240043FE67</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRSocialHTTPFormDataRequest.h</string>
+			<key>path</key>
+			<string>Classes/Utils/Network/PRSocialHTTPFormDataRequest.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93EAE9AA192C46240043FE67</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRSocialHTTPFormDataRequest.m</string>
+			<key>path</key>
+			<string>Classes/Utils/Network/PRSocialHTTPFormDataRequest.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93EAE9AB192C46240043FE67</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93EAE9AA192C46240043FE67</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>93EE296D192C785B001DB007</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PRSocialGlobalHUD.h</string>
+			<key>path</key>
+			<string>Classes/Utils/UI/PRSocialGlobalHUD.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93EE296E192C785B001DB007</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PRSocialGlobalHUD.m</string>
+			<key>path</key>
+			<string>Classes/Utils/UI/PRSocialGlobalHUD.m</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>93EE296F192C785B001DB007</key>
+		<dict>
+			<key>fileRef</key>
+			<string>93EE296E192C785B001DB007</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B8039DAFD14447149D7C3B5F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-PRSocialDemo/Pods-PRSocialDemo-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>DEF7DF1DDE47CCDA34A8CCE5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-PRSocialDemo.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-PRSocialDemo/Pods-PRSocialDemo.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FEDD4F2D380D409DB02D6740</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-PRSocialDemo.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>93707499192AE68D009561E1</string>
+</dict>
+</plist>
